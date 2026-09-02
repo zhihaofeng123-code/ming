@@ -71,7 +71,7 @@ export function WaitlistForm({ source }: { source: string }) {
           disabled={done || state === "submitting"}
           className="h-12 shrink-0 rounded-md bg-primary px-6 text-[15px] font-medium text-primary-foreground transition hover:opacity-90 disabled:opacity-60 sm:px-7"
         >
-          {state === "submitting" ? "Joining…" : done ? "You're in" : "Join the waitlist"}
+          {state === "submitting" ? "Joining…" : done ? "You’re in" : "Join the waitlist"}
         </button>
       </div>
       <p
@@ -81,9 +81,9 @@ export function WaitlistForm({ source }: { source: string }) {
         }`}
       >
         {state === "joined"
-          ? "You're on the list. We'll email you once, when MING opens."
+          ? "You’re on the list. We’ll email you once, when MING opens."
           : state === "already"
-            ? "You're already on the list — nothing more to do."
+            ? "You’re already on the list — nothing more to do."
             : state === "error"
               ? errorText
               : IDLE_HINT}
